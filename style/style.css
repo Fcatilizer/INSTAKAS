@@ -149,7 +149,9 @@ header nav form input {
   header nav form {
     margin: 1rem !important;
   }
+}
 
-  
-
+.grid-about div div div {
+  border: none !important; 
+  box-shadow: none !important;
 }
