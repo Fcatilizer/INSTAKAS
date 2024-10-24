@@ -119,18 +119,37 @@ form input {
 
 @media screen and (max-width: 768px) {
   .logo{
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    align-self: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
   }
 
   form {
-    display: flex;
-    margin-left: 0rem!important;
+    display: flex !important;
+    margin-left: 0rem !important;
   }
   
   .subinfo {
-    display: none!important;
+    display: none !important;
   }
+}
+
+header nav form input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  header nav form input {
+    width: 20rem !important;
+  }
+
+  header nav form {
+    margin: 1rem !important;
+  }
+
+  
+
 }
