@@ -199,12 +199,16 @@
         margin: auto;
         display: block;
       }
+      .carousel-item {
+        display: flex;
+        justify-content: center;
+      }
     }
   </style>
   <!-- below banner -->
   
-  <div style="display: flex; padding: 5rem;">
-    <div class="top">
+  <div style="display: flex; padding: 5rem;" class="row">
+    <div class="col-md-2">
       <h2>Our Courses</h2>
       <h5 class="text-muted" style="align-content: start;">For KAS-KPSC Coaching</h5>
       <button style="
@@ -218,21 +222,52 @@
         View All Courses
       </button>
     </div>
-    <div class="down" style="flex: 1; align-items: end;">
+    <div class="col" style="flex: 1; align-items: end;">
       <h6 style="align-content: end; padding-left: 15rem; align-items: end; font-weight: 500;">
         As the Top KAS Coaching in Karnataka, We offer the most popular courses for KPSC-IAS, Civil Services Exams Preparations. Choose a course to get start your KPSC-KAS, Civil Service Exams Preparation.
       </h6>
     </div>
   </div>
 
+  <style>
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+      }
+      .col-md-2, .col {
+        width: 100%;
+        padding: 0.5rem 0;
+      }
+      .col h6 {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: -15rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
+
+
+  </style>
+
   </div>
   <!-- Swiper -->
   <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" style="background: rgb(251,251,251);
-background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 100%); padding: 1rem;">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="card-wrapper container-sm d-flex  justify-content-around">
-          <div class="card" style="width: 20rem; margin-top: 2rem;">
+  background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 100%); padding: 1rem;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 100%; max-width: 20rem; margin: 0 auto;">
+            <!-- Card content for the first item -->
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="/src/img/image 1.png" class="card-img-top" alt="...">
@@ -249,68 +284,17 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
               </div>
             </div>
           </div>
-          <div class="card" style="width: 20rem;  margin-top: 2rem;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="/src/img/History-Question-Bank3e-Vinay-GB-5-scaled 1.png" class="card-img-top" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Science And Technology <small>(Question Book)</small></h5>
-                  <p class="card-text">For Civil Services Preliminary Examination</p>
-                  <div class="d-flex justify-content-between" style="gap: 1%;">
-                    <button class="btn btn-secondary btn-sm">Courses Details</button>
-                    <button class="btn btn-danger btn-sm">View Schedule</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="width: 20rem;  margin-top: 2rem;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="/src/img/History-Question-Bank3e-Vinay-GB-4-scaled 1.png" class="card-img-top" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Art And Culture <small>(Question Bank)</small></h5>
-                  <p class="card-text">For Civil Services Preliminary Examination</p>
-                  <div class="d-flex justify-content-between" style="gap: 1%;">
-                    <button class="btn btn-secondary btn-sm">Courses Details</button>
-                    <button class="btn btn-danger btn-sm">View Schedule</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card-wrapper container-sm d-flex   justify-content-around">
-          <div class="card  " style="width: 20rem; margin-top: 2rem;">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 100%; max-width: 20rem; margin: 0 auto;">
+            <!-- Card content for the second item -->
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="/src/img/image 1.png" class="card-img-top" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Indian Polity <small>(Question Bank)</small></h5>
-                  <p class="card-text">For Civil Services Preliminary Examination</p>
-                  <div class="d-flex justify-content-between" style="gap: 1%;">
-                    <button class="btn btn-secondary btn-sm">Courses Details</button>
-                    <button class="btn btn-danger btn-sm">View Schedule</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="width: 20rem; margin-top: 2rem;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="/src/img/History-Question-Bank3e-Vinay-GB-5-scaled 1.png" class="card-img-top" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
                   <h5 class="card-title">Science And Technology <small>(Question Book)</small></h5>
                   <p class="card-text">For Civil Services Preliminary Examination</p>
                   <div class="d-flex justify-content-between" style="gap: 1%;">
@@ -321,68 +305,17 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
               </div>
             </div>
           </div>
-          <div class="card" style="width: 20rem; margin-top: 2rem;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="/src/img/History-Question-Bank3e-Vinay-GB-4-scaled 1.png" class="card-img-top" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Art And Culture <small>(Question Bank)</small></h5>
-                  <p class="card-text">For Civil Services Preliminary Examination</p>
-                  <div class="d-flex justify-content-between" style="gap: 1%;">
-                    <button class="btn btn-secondary btn-sm">Courses Details</button>
-                    <button class="btn btn-danger btn-sm">View Schedule</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card-wrapper container-sm d-flex  justify-content-around">
-          <div class="card " style="width: 20rem; margin-top: 2rem;">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card" style="width: 100%; max-width: 20rem; margin: 0 auto;">
+            <!-- Card content for the third item -->
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="/src/img/image 1.png" class="card-img-top" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Indian Polity <small>(Question Bank)</small></h5>
-                  <p class="card-text">For Civil Services Preliminary Examination</p>
-                  <div class="d-flex justify-content-between" style="gap: 1%;">
-                    <button class="btn btn-secondary btn-sm">Courses Details</button>
-                    <button class="btn btn-danger btn-sm">View Schedule</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="width: 20rem; margin-top: 2rem;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="/src/img/History-Question-Bank3e-Vinay-GB-5-scaled 1.png" class="card-img-top" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Science And Technology <small>(Question Book)</small></h5>
-                  <p class="card-text">For Civil Services Preliminary Examination</p>
-                  <div class="d-flex justify-content-between" style="gap: 1%;">
-                    <button class="btn btn-secondary btn-sm">Courses Details</button>
-                    <button class="btn btn-danger btn-sm">View Schedule</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="width: 20rem; margin-top: 2rem;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="/src/img/History-Question-Bank3e-Vinay-GB-4-scaled 1.png" class="card-img-top" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
                   <h5 class="card-title">Art And Culture <small>(Question Bank)</small></h5>
                   <p class="card-text">For Civil Services Preliminary Examination</p>
                   <div class="d-flex justify-content-between" style="gap: 1%;">
@@ -395,43 +328,56 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+
+    <div class="carousel-item">
+      <div class="row">
+        <!-- Repeat similar structure for other carousel items -->
+      </div>
+    </div>
+
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
   <!-- below swiper -->
+
+  <style>
+    @media screen and (max-width: 768px) {
+      .midcol {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: -15rem;
+      }      
+          
+    }
+  </style>
 
   <!-- section below slider -->
 
-  <div></div>
-  <div style="
-        display: flex;
-        /* align-items: center;
-        justify-content: center; */
-        /* text-align: center; */
-        padding: 5rem;
-      ">
-    <div style="align-items: start;">
-      <h2>Resources For The Day</h5>
-        <div style="display: flex;">
-          <h5 class="text-muted" style="align-content: start;">Useful Resources to Succeed
-      </h2>
-      <h6 style="align-content: end; padding-left: 15rem; align-items: end; font-weight: 500;">Helps KAS Aspirants to
+  <div style="display: flex; padding: 5rem;" class="row">
+    <div class="col-md-3">
+      <h2>Resources For The Day</h2>
+      <h5 class="text-muted" style="align-content: start;">Useful Resources to Succeed</h5>
+      
+    </div>
+    <div class="col-md-8" style="flex: 1; align-items: end;">
+      <h6 class="midcol" style="align-content: end; padding-left: 15rem; align-items: end; font-weight: 500;">
+        Helps KAS Aspirants to
         understand various concept that are a part of the syllabus. A brief analysis of various topics will be posted
         from subjects like Art & culture, History, Economy, Geography, Science and Technology, Environment and Ecology
-        etc on a daily basis.</h5>
+        etc on a daily basis.
+      </h6>
     </div>
-
-  </div>
-
   </div>
 
   <!-- below section -->
@@ -440,126 +386,111 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
 
   <div id="carouselExampleControls2" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-inner">
+      <!-- First slide -->
       <div class="carousel-item active">
-        <div class="card-wrapper container-sm d-flex justify-content-around">
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Geograpgy</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+        <div class="container-sm">
+          <div class="row justify-content-around">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Geography</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem; margin-left: 1rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Geograpgy</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Geography</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+  
+      <!-- Second slide -->
       <div class="carousel-item">
-        <div class="card-wrapper container-sm d-flex justify-content-around">
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Geograpgy</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+        <div class="container-sm">
+          <div class="row justify-content-around">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Geography</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Geograpgy</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+  
+      <!-- Third slide -->
       <div class="carousel-item">
-        <div class="card-wrapper container-sm d-flex justify-content-around">
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Geograpgy</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+        <div class="container-sm">
+          <div class="row justify-content-around">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Geography</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Geograpgy</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem; margin-top: 2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Daily Current Affairs <small>Political Science</small></h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley</p>
-              <button class="btn btn-danger">Explore More</button>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem; margin-top: 2rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Current Affairs <small>Geography</small></h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <button class="btn btn-danger">Explore More</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+  
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -570,24 +501,39 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  
 
   <!-- Below Card Slider -->
-  <div style="display: flex; padding-top: 5rem;">
-    <div style="width: 100%;
-    height: 781.512px;
-    flex-shrink: 0; background: linear-gradient(254deg, #EB8871 1.55%, #E61E14 95.8%); ">
-      <div style="display: flex; margin: 5rem; align-items: start; align-content: start; text-align: start;">
-        <div style=" width: 50%; align-items: start; align-content: start; text-align: start;">
-          <h1 style="color: #fff;">Success Stories From Our Students</h3>
-            <h3 style="font-weight: 200; color: #fff; margin-right: 8rem; margin-top: 2rem;">We take pride in having
-              served 6,000+ Selections in the KPSC Results. Producing great results year after year, We are counted
-              among Top KAS coaching institutes in Karnataka.</h2>
-              <button style="background-color: #fff; color:red; padding: 2%; margin-top: 2rem;">View's Topper's
-                List</button>
+  <div style="display: flex; padding-top: 5rem; flex-direction: column; align-items: center;"></div>
+  <div style="width: 100%; height: 781.512px; padding-top: 5rem; padding-bottom: 50rem;  flex-shrink: 0; background: linear-gradient(254deg, #EB8871 1.55%, #E61E14 95.8%);">
+    <div class="d-flex flex-column flex-md-row" style="margin: 5rem; align-items: start; align-content: start; text-align: start;">
+      <div style="width: 100%; align-items: start; align-content: start; text-align: start;">
+        <h1 style="color: #fff;">Success Stories From Our Students</h1>
+        <h3 style="font-weight: 200; color: #fff; margin-right: 8rem; margin-top: 2rem;">We take pride in having served 6,000+ Selections in the KPSC Results. Producing great results year after year, We are counted among Top KAS coaching institutes in Karnataka.</h3>
+        <button style="background-color: #fff; color:red; padding: 2%; margin-top: 2rem;">View's Topper's List</button>
         </div>
-        <img style="align-items: end; align-content: end; align-self: end; margin-left: 5rem;"
-          src="/src/img/Media Placeholders.png" alt="Logo" style="width: 50%; height: 100%" ; />
-      </div>
+        <img class="mt-4 mt-md-0 ml-md-5" style="width: 80%; height: auto;" src="/src/img/Media Placeholders.png" alt="Logo" />
+
+        <style>
+          @media (max-width: 768px) {
+            h1 {
+              font-size: 1.5rem;
+            }
+            h3 {
+              font-size: 1rem;
+              margin-right: 0;
+              margin-top: 1rem;
+            }
+            button {
+              padding: 1%;
+              margin-top: 1rem;
+            }
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        </style>
     </div>
   </div>
   <!-- below banner 2 -->
@@ -606,8 +552,17 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
     </div>
   </div>
   <!-- swiper -->
-  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel"
+  <div id="carouselExampleControls" class="carousel carousel-dark slide cerd" data-bs-ride="carousel"
     style="background: linear-gradient(180deg, #FFF 33.19%, #FFEAC0 100%); padding: 2rem;">
+    <style>
+      @media screen and (max-width: 768px) {
+        .cerd div div div  div img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        
+      }
+    </style>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="card-wrapper container-sm d-flex  justify-content-around">
@@ -688,15 +643,57 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
   <image src="/src/img/achievements.png" style="display: flex; height: 80%; width: 100%; justify-content: center;" />
 
   <!-- below achievements -->
-  <div style="border-radius: 38px; background: linear-gradient(180deg, #FFF 45.22%, #FFEAC0 100%); height: 584px; margin: 5rem; display: flex;">
-    <div style="justify-content: start; align-items: start; align-content: start; margin: 5rem;">
-      <h2 style="color: #da251d; padding-bottom: 2rem;">Ananya Sadhana</h3>
-       <h5 style="width: 80%;">Insights IAS 'Ananya Sadhana' Value Added Upgradation - Comprehensive
-        Current Affairs - Kannada Monthly Edition</h5>
-        <button style="background-color: #da251d; color: #fff; padding: 0.5rem; margin-top: 2rem;">Subscribe Now</button> 
+  <div class="ananya-sadhana-container" style="border-radius: 38px; background: linear-gradient(180deg, #FFF 45.22%, #FFEAC0 100%); height: 584px; margin: 5rem; display: flex;">
+    <!-- Left Text Section -->
+    <div class="text-content" style="margin: 5rem;">
+      <h2 style="color: #da251d; padding-bottom: 2rem;">Ananya Sadhana</h2>
+      <h5 style="width: 80%;">Insights IAS 'Ananya Sadhana' Value Added Upgradation - Comprehensive Current Affairs - Kannada Monthly Edition</h5>
+      <button style="background-color: #da251d; color: #fff; padding: 0.5rem; margin-top: 2rem;">Subscribe Now</button> 
     </div>
-    <img src="/src/img/Group 261.png" style="justify-content: end; align-items: end; align-content: end; height: 80%;"/>
+  
+    <!-- Right Image Section -->
+    <div class="image-content" style="display: flex; justify-content: center; align-items: center; padding: 2rem;">
+      <img src="/src/img/Group 261.png" style="height: 80%; max-width: 100%;" alt="Ananya Sadhana"/>
+    </div>
   </div>
+  
+  <!-- Responsive Styles -->
+  <style>
+    .ananya-sadhana-container {
+      display: flex;
+      align-items: center;
+      /* text-align: center; */
+    }
+    
+    .text-content {
+      flex: 1;
+      font-size: smaller;
+      margin: auto;
+      /* margin-left: 10rem; */
+    }
+  
+    .image-content {
+      flex: 1;
+    }
+  
+    /* Mobile view adjustments */
+    @media (max-width: 768px) {
+      .ananya-sadhana-container {
+        flex-direction: column;
+        height: auto;
+        margin: 2rem;
+        text-align: center;
+      }
+      .text-content {
+        margin: 1rem 0;
+      }
+      .image-content {
+        padding: 1rem;
+        display: none;
+      }
+    }
+  </style>
+  
 
   <!-- Start of Newsletter -->
   <div style="justify-content: center; display: flex; align-items: center">
@@ -740,13 +737,32 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
   <!-- End of Newsletter -->
 
   <div class="container">
+    <style>
+      .footer-logo {
+        width: 50% !important;
+        height: auto;
+        max-width: 10rem;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .socials {
+          display: flex;
+          justify-content: center;
+          width: 50%;
+          margin: auto;
+        }
+        
+      }
+
+    </style>
+
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col mb-3">
-        <img src="/src/img/KAS-2 1.png" />
-        <p style="font-size: 1rem; ">
+        <img src="/src/img/KAS-2 1.png" class="footer-logo" />
+        <p style="font-size: 1rem;"></p>
           Insta KAS has redefined, revolutionised and simplified the way aspirants prepare for KPSC Civil Services Exam.
         </p>
-        <div style="display: flex; gap: 1rem">
+        <div style="display: flex; gap: 1rem" class="socials">
           <img src="/src/img/facebook-logo.svg" />
           <img src="/src/img/instagram.svg" />
           <img src="/src/img/linkedin.svg" />
@@ -757,7 +773,7 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
       <div class="col mb-3">
         <p style="font-size: 1.5rem; line-height: 1.5rem">Useful Links</p>
         <ol style="list-style-type: none; padding-left: 0">
-          <li>Home`</li>
+          <li>Home</li>
           <li>KPSC</li>
           <li>Topper's Corner</li>
           <li>Resources</li>
@@ -801,9 +817,21 @@ background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(253,240,45,1) 1
           </span>InsightsIAS Headquarters, Nanda Ashirwad Complex, 3rd Floor, Above Village Hyper Market, Chandralyout Main Road, Attiguppe , Bengaluru - 560040 </li>
         </ol>
       </div>
+    </footer>
+  </div>
 
-      </footer>
-      </div>
+  <style>
+    .footer-logo {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-logo {
+        max-width: 100px;
+      }
+    }
+  </style>
 
 
   <!-- Swiper JS -->
