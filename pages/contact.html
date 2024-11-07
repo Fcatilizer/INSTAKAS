@@ -132,75 +132,99 @@
   </header>
     <!-- Below Header -->
     <div class="container my-5 d-flex justify-content-center">
+      <div class="card w-100" style="margin-top: 2rem;">
+        <div class="row g-0">
+          <div class="col-md-4" style="background-color: #da251d;">
+            <img src="/src/img/Group 1.png" class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body form-card">
+              <h1 class="card-title" style="font-weight: 700;">Let Us Reach You</h1>
+              <form class="form-card" onsubmit="event.preventDefault()">
+                <div class="row">
 
-        <div class="card w-100" style="margin-top: 2rem;">
-            <div class="row g-0">
-              <div class="col-md-4" style="background-color: #da251d;">
-                <img src="/src/img/Group 1.png" class="card-img-top" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body form-card">
-                  <h1 class="card-title" style="font-weight: 700;">Let Us Reach You</h1>
-                  <form class="form-card" onsubmit="event.preventDefault()">
-                    <div class="row justify-content-between text-left">
-                      <div class="form-group col-12 flex-column d-flex">
-                        <input class="form-control" type="text" id="fname" name="fname" placeholder="First Name *" onblur="validate(1)">
-                      </div>
-                      <div class="form-group col-12 col-md-6 flex-column d-flex">
-                        <input class="form-control" type="text" id="lname" name="lname" placeholder="Last Name" onblur="validate(2)">
-                      </div>
-                    </div>
-                    <div class="row justify-content-between text-left">
-                      <div class="form-group col-12 col-md-6 flex-column d-flex">
-                        <input class="form-control" type="text" id="email" name="email" placeholder="Phone Number *" onblur="validate(3)">
-                      </div>
-                      <div class="form-group col-12 col-md-6 flex-column d-flex">
-                        <input class="form-control" type="text" id="mob" name="mob" placeholder="Email *" onblur="validate(4)">
-                      </div>
-                    </div>
-                    <div class="row justify-content-between text-left" style="margin: 0.1rem;">
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message *" onblur="validate(5)"></textarea>
-                    </div>
-                    <div class="form-check" style="margin-left: 0.5rem;">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                      <label class="form-check-label" for="flexCheckDefault1">
-                        I wish to receive email notifications
-                      </label>
-                    </div>
-                    <div class="form-check" style="margin-left: 0.5rem;">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                      <label class="form-check-label" for="flexCheckDefault2">
-                        I accept the <span style="color: #da251d;">terms and conditions</span>
-                      </label>
-                    </div>
-                    <div class="form-group">
-                      <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                      <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <div>
-                      <button type="submit" class="btn btn-outline-danger">Submit</button>
-                    </div>
-                  </form>
-                </div>
+                  <div class="col">
 
-                <style>
-                  @media (max-width: 768px) {
-                    .form-group {
-                      margin-bottom: 1rem;
-                    }
-                    .row {
-                      flex-direction: column;
-                    }
-                  }
-                </style>
+                    <input
+                    class="form-control"
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="First Name"
+                    onblur="validate(1)"
+                  />
                 </div>
-              </div>
+                <div class="form-group col-12 col-md-6 mb-3">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Last Name"
+                    onblur="validate(2)"
+                  />
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                    class="form-control"
+                    type="text"
+                    id="phoneMobile"
+                    name="phone"
+                    placeholder="Phone"
+                    onblur="validate(1)"
+                  />
+                </div>
+                <div class="form-group col-12 col-md-6 mb-3">
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="emailMobile"
+                    name="email"
+                    placeholder="Email"
+                    onblur="validate(2)"
+                  />
+                  </div>
+                </div>
+                
+
+              </form>
+            </div>
+            <div style="margin-left: 1.5rem; margin-right: 1.5rem; margin-top: -1rem;">
+              <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+              
+                <input class="form-check-input" type="checkbox" id="notifCheckboxMobile" />
+                <label class="form-check-label" for="notifCheckboxMobile">
+                  I wish to receive email notifications
+                </label><br>
+                <input class="form-check-input" type="checkbox" id="termsCheckboxMobile" />
+                <label class="form-check-label" for="termsCheckboxMobile">
+                  I accept the <span style="color: #da251d;">terms and conditions</span>
+                </label>
+                <div
+                class="g-recaptcha"data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"></div><br>
+                <button style="margin-bottom: 2rem;" type="submit" class="btn btn-outline-danger">Submit</button>
             </div>
           </div>
           
-
+        </div>
+      </div>
     </div>
+    
+    <style>
+      /* Responsive adjustments for mobile screens */
+      @media (max-width: 768px) {
+        .row {
+          flex-direction: column;
+        }
+        .form-group {
+          margin-bottom: 1rem;
+        }
+      }
+    </style>
+    
     <!-- Footer -->
 
     <div class="container">
