@@ -6,7 +6,7 @@
     <img src="./src/img/Bootstrap_logo.svg.png" alt="BootStrap" style="width: 100px; height: auto; margin-right: 10px;">
   </a>
   <a href="https://www.figma.com/design/c2hRWKAuq2Xn1vMU3v16Cj/Insta-KAS-(21-06-23)?node-id=2311-22&node-type=frame&t=QipoJUq1gnDsHnIm-0">
-    <img src="./src/img/png-transparent-figma-app-logo-tech-companies-thumbnail.png" alt="Figma" style="width: 100px; height: auto;">
+    <img src="./src/img/figma2.png" alt="Figma" style="width: 100px; height: auto;">
   </a>
 </div>
 
